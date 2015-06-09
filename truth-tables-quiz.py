@@ -71,16 +71,5 @@ while len(TABLES) > 0:
 	del table[expression]
 	if len(table) < 1:
 		del TABLES[index]
-#	while len(table) > 0:
-#		expression = choice(list(table.keys()))
-#		answer = raw_input("What is the value of `%s`? " % expression)
-#		if answer.lower() == str(table[expression]).lower():
-#			correct += 1
-#			print "Very good! `%s` is indeed `%s`." % (expression, table[expression])
-#		else:
-#			print "Incorrect. `%s` is actually `%s`" % (expression, table[expression])
-#		print ""
-#		del table[expression]
-#	del TABLES[index]
 else:
 	print "Your socre is %d / %d: %f%%" % (correct, total, (float(correct) / float(total) * 100))
